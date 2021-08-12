@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+a {
+    text-decoration: none;
+    color: hsl(277, 64%, 61%);
+}
+
+.container {
+    background-color: hsl(244, 38%, 16%);
+    width: 90%;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    border-radius: 1rem;
+}
+
+.img-house {
+    background-color: hsl(277, 64%, 61%);
+    border-radius: 1rem 1rem 0rem 0rem;
+    border: none;
+    min-height: 36vh;
+    object-fit: contain;
+    background-image: url("./images/image-header-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.head-img {
+    width: 100%;
+    border-radius: 1rem 1rem 0rem 0rem;
+    opacity: 0.9;
+    border: none;
+}
+
+.main {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.main span {
+    color: hsl(277, 64%, 61%);
+}
+
+
+.numbers {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.numbers h1{
+    margin-bottom: 0;
+}
+
+
+.numbers p{
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.6);
+    margin-top: 0;
+}
+
+.attribution {
+    padding-bottom: 1rem;
+}
+
+@media (min-width:670px) {
+    body {
+        overflow: hidden;
+    }
+
+    .container {
+        width: 80%;
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+    .main {
+        width: 70%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .numbers {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width:1040px) {
+    body {
+        overflow: hidden;
+    }
+
+    .container {
+        width: 70%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .img-house {
+        min-width: 25rem;
+        min-height: 36vh;
+        object-fit: contain;
+        background-image: url("./images/image-header-desktop.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: multiply;
+        border-radius: 0rem .5rem .5rem 0rem;
+    }
+
+    .head-img {
+        width: 100%;
+        border-radius: 0rem 0rem 0rem 0rem;
+        opacity: 0.9;
+        border: none;
+    }
+
+    .main {
+        width: 70%;
+        margin: auto;
+        text-align: left;
+        padding-left: 3rem;
+        padding-right: 6rem;
+    }
+
+    .numbers {
+        display: flex;
+        width: 80%;
+        margin: 0;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+}
