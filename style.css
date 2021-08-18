@@ -76,9 +76,6 @@ a {
 }
 
 @media (min-width:670px) {
-    body {
-        overflow: hidden;
-    }
 
     .container {
         width: 80%;
